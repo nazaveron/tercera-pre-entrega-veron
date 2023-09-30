@@ -1,0 +1,60 @@
+{% extends "cinema/padre.html" %}
+
+{% load static %}
+
+{% block image %}
+<img src="https://harewood.org/wp-content/uploads/2019/04/Harewood-House_Greatest-Showman-2048x988-1-1024x683.png"
+    width="700" alt="" srcset="">
+{% endblock %}
+
+
+{% block title %}
+
+Tus películas favoritas al aire libre
+
+{% endblock %}
+
+{% block description %}
+
+Viernes, sábados y domingos
+
+{% endblock %}
+
+{% block button %}
+¡Consigue tus tickets antes de que se agoten!
+{% endblock %}
+
+{% block parrafo %}
+Organizamos nuestras funciones según el día, enterate leyendo más abajo
+{% endblock %}
+
+
+<!-- CARDS -->
+
+{% block title_card_one %}
+<h2>Viernes</h2>
+{% endblock%}
+
+{% block text_card_one %}
+<p>Clásicos de terror que no podes perderte</p>
+<img src="https://static.wikia.nocookie.net/scream/images/d/d4/Scream_xlg.jpg/revision/latest?cb=20160316033407"
+    width="200" height="300" alt="">
+{% endblock %}
+
+{% block title_card_two %}
+<h2>Sábado</h2>
+{% endblock %}
+
+{% block text_card_two %}
+<p>Vení a disfrutar de ABBA con tus amigos</p>
+<img src="https://cineuropa.org/Galleries/089/047/poster_big.jpg?1338562732000" alt="" width="200" height="300" >
+{% endblock %}
+
+{% block title_card_three %}
+<h2>Domingo</h2>
+{% endblock %}
+
+{% block text_card_three %}
+<p>Para cerrar la semana, te seleccionamos las mejores comedias románticas</p>
+<img src="https://i.pinimg.com/564x/3e/34/4c/3e344c0b137e780a0454cf5d1cd074d6.jpg" alt="" width="200" height="300">
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "cinema/LoginLayout.html" %}
+{% load static %}
+
+
+
+{% block parrafo %}
+<h1>Averigua si  tu película está en nuestros próximos estrenos</h1>
+<form method="get" action="{% url 'resultados' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Buscar</button>
+</form>
+{% endblock %}

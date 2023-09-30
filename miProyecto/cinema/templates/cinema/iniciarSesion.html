@@ -1,0 +1,15 @@
+{% extends "cinema/LoginLayout.html" %}
+{% load static %}
+
+{% block parrafo %}
+<h1>Inicia Sesión</h1>
+<form action="" method="POST"> {% csrf_token %}
+
+    <table>
+        {{ form1.as_table }}
+    </table>
+
+    <input type="submit" value="Inciar">
+
+</form>
+{% endblock %}
